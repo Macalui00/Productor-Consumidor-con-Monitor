@@ -6,16 +6,9 @@ public class Productor {
 	public Productor() {
 	}
 	
-	public void activado() {
-		
-	    while (true) {
-	        int item = producirItem();
-	        Monitor.Añadir(item);
-	    }
-	}
-	
-	private int producirItem() {
+	public int producirItem() {
 		numero = (int) (Math.random() * 10);
+        System.out.println("El item producido es: "+ numero +".\n");
 		return numero;
 	}
 }
